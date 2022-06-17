@@ -48,3 +48,20 @@ nav .menu{
     float: right;
     display: none;
 }
+
+/*HEADER*/
+header{
+  height: 80vh;
+  padding: 100px 30px 30px 30px;
+  text-align: center;
+  background: #000 url("../img/header.jpg") no-repeat center center;
+  background-size: cover;
+  color: #fff;
+  font-size: 25px;
+  
+  
+}
+header h2 span{
+  color: #54c4cb;
+}
+header p{font-size: 18px;}
