@@ -2,13 +2,21 @@
   * { box-sizing: border-box;}
   *::-webkit-scrollbar {width: 5px; background-color: #ededed;}  
   *::-webkit-scrollbar-thumb {background-color: #000;} 
+  html {scroll-behavior: smooth;}
   body {margin: 0; padding: 0; font-family: Arial, Helvetica, sans-serif; font-size: 14px;}
   img { display: block; height: auto; max-width: 100%;}
   header, section, footer, aside, nav, main, article, figure {display: block;}
  button{border: none; color:white; padding: 14px 28px; font-size:16px; cursor: pointer; background: #54c4cb;
 border-radius: 3px; }
 button:hover{background: #54c3ee;}
- /* Navbar*/
+
+label{font-size: 20px;}
+input, textarea{width: 100%;padding: 12px 20px;margin: 8px 0;box-sizing: border-box;border: none;border-radius: 5px;
+}
+input[type=submit]{background-color: #2196f3; color: #fff; cursor: pointer; font-size: 18px;}
+ 
+
+/* Navbar*/
 
 nav .container{
     max-width: 1200px; 
@@ -75,19 +83,20 @@ section{
 }
 
 
-.row:after{content: "" ; display: table;
-clear: both ;}
+.row:after{content: "" ; 
+  display: table;
+  clear: both ;}
 .col-66{
- 
+  float: left;
   width: 66.66%;
   padding: 20px;
+ 
   
 }
-.row-66-33{float: left;}
 
 .col-33{
  
-  display: table;
+  float: left;
   width: 33.33%;
   padding: 20px;
 }
@@ -104,4 +113,22 @@ clear: both ;}
 .thirdTitle{
   font-size: 24px;
   
+}
+/*Footer*/
+footer{
+  background: #54c3ee url("../img/map.png") no-repeat center center;
+  background-size: contain;
+}
+footer section{
+  width:65% ;
+  margin: auto;
+}
+footer p{
+  width: 100%;
+  margin: 0px;
+  background-color: #323544;
+  color: #999;
+  text-align: center;
+  line-height: 70px;
+
 }
